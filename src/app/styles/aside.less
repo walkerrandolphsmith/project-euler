@@ -1,0 +1,138 @@
+aside.sidebar {
+  &:hover {
+    a {
+      color: #0181eb;
+
+      &:visited {
+        color: #751590;
+      }
+    }
+  }
+
+  section{
+    &.group {
+      display: none;
+      position: relative;
+      &.current-group {
+        display: block;
+      }
+      .pages {
+        position: absolute;
+        top: 0;
+        right: 0;
+        i {
+          cursor: pointer;
+          &.fa-angle-left { padding-right: 0.25em; }
+          &.fa-angle-right { padding-left: .25em; }
+        }
+      }
+    }
+
+    h1 {
+      margin: 1.5em 0 0;
+      padding-bottom: .2em;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    ul {
+      margin-bottom: 0.5em;
+      margin-left: 0;
+      padding: 0;
+
+      &.list {
+          li:last-child{
+            border-bottom: none;
+            box-shadow: none;
+            margin-bottom: 2.5em;
+          }
+      }
+
+      &.my-badges {
+        li.badge {
+          display: inline;
+          border-bottom: none;
+          box-shadow: none;
+
+          img.icon {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+
+      li {
+        list-style: none;
+        padding: 0.5em 0;
+        margin: 0;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: #fff 0 1px;
+        display: list-item;
+        text-align: -webkit-match-parent;
+
+        a {
+          color: inherit;
+          transition: color 0.5s;
+          white-space: -moz-pre-wrap;
+          white-space: -pre-wrap;
+          white-space: -o-pre-wrap;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+        }
+
+        p {
+          margin-bottom: 1.5em;
+          display: block;
+          -webkit-margin-before: 1em;
+          -webkit-margin-after: 1em;
+          -webkit-margin-start: 0px;
+          -webkit-margin-end: 0px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+section{
+  &.group {
+    display: none;
+    position: relative;
+    &.current-group {
+      display: block;
+    }
+    .pages {
+      position: absolute;
+      top: 0;
+      right: 0;
+      i {
+        cursor: pointer;
+        &.fa-angle-left { padding-right: 0.25em; }
+        &.fa-angle-right { padding-left: .25em; }
+      }
+    }
+  }
+  .list {
+    list-style: none;
+    padding: 0;
+
+    li h5 {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #000;
+      margin-top: 0px;
+      margin-bottom: 4px;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      zoom: 1;
+
+      a[href*="//"]:not([href*="walkerrandolphsmith.com"]):after {
+
+      }
+    }
+  }
+}
