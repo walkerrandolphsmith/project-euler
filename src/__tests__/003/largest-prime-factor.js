@@ -1,4 +1,5 @@
 jest.dontMock('./../../app/problems/003/largest-prime-factor');
+jest.dontMock('./../../app/problems/utils/Utils');
 
 describe('../src/app/problems/003/largest-prime-factor', () => {
   let sut;

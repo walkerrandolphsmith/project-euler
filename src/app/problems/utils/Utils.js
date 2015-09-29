@@ -9,3 +9,20 @@ export function GCD(a,b){
   }
   return b;
 }
+
+function evenlyDivides(n,k){
+  return (n % k === 0);
+}
+
+export function getPrimes(n){
+  var primes = [];
+  if(evenlyDivides(n,2))
+    primes.push(n);
+
+  const max = Math.sqrt(n);
+  for (var i = 3; i <= max; i = i+2) {
+    if (evenlyDivides(n,i))
+      primes.push(i);
+  }
+  return primes;
+}
