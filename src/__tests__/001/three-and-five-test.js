@@ -1,4 +1,5 @@
 jest.dontMock('./../../app/problems/001/three-and-five');
+jest.dontMock('./../../app/problems/utils/Utils');
 
 describe('../src/app/problems/001/three-and-five', () => {
   let sut;

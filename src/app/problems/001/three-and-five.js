@@ -1,17 +1,6 @@
-function LCM(a,b){
-  return Math.abs(a*b) / GCD(a,b);
-}
-
-function GCD(a,b){
-  var c;
-  while ( a != 0 ) {
-     c = a; a = b%a; b = c;
-  }
-  return b;
-}
+import {LCM} from './../utils/Utils';
 
 export function threeAndFive(){
-
   var a = 0;
   var b = 1000;
   var n = 3;
