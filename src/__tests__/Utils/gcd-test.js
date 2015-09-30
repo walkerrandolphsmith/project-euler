@@ -10,7 +10,7 @@ describe('../src/app/problems/utils/Utils/GCD', () => {
     const value1 = 5;
     const value2 = 10;
 
-    describe('When determining largest positive integer that divides the 5 and 10 without a remainder.', () => {
+    describe('When determining largest positive integer that divides 5 and 10 without a remainder.', () => {
       let actual;
       beforeEach(() => {
          actual = sut(value1, value2);
