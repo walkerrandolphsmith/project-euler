@@ -29,15 +29,3 @@ export function getPrimeFactors(n){
   }
   return primes;
 }
-
-export function getPrimes(n){
-  var primes = [];
-  if(evenlyDivides(n,2))
-    primes.push(2);
-
-  for (var i = 3; i <= n; i = i+2) {
-    if (evenlyDivides(n,i))
-      primes.push(i);
-  }
-  return primes;
-}
