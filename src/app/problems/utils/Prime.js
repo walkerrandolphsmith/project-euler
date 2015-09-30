@@ -13,6 +13,19 @@ export function getPrimes(n){
 }
 
 export function isPrime(n){
-  var primes = getPrimes(n);
-  return primes[0] === n;
+  if (n < 0)
+    throw("Negative number");
+  if (n == 0 || n == 1)
+    return false;
+  else if (n == 2)
+    return true;
+  else {
+		if (n % 2 == 0)
+			return false;
+		for (var i = 3, end = Math.sqrt(n); i <= end; i += 2) {
+			if (n % i == 0)
+				return false;
+		}
+		return true;
+	}
 }
