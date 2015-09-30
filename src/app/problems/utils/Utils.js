@@ -14,7 +14,7 @@ export function evenlyDivides(n,k){
   return (n % k === 0);
 }
 
-export function getPrimes(n){
+export function getPrimeFactors(n){
   var primes = [];
   if(evenlyDivides(n,2))
     primes.push(n);
