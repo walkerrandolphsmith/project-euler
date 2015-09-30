@@ -16,11 +16,26 @@ export function evenlyDivides(n,k){
 
 export function getPrimeFactors(n){
   var primes = [];
-  if(evenlyDivides(n,2))
-    primes.push(n);
-
+  if(evenlyDivides(n,2)){
+    primes.push(2);
+  }
+  //TODO: This is used to get the greatest prime factor of n which won't always work ->
+  //the smallest prime factor is less than or equal to sqrt(n) unless n is prime.
   const max = Math.sqrt(n);
   for (var i = 3; i <= max; i = i+2) {
+    if (evenlyDivides(n,i)){
+      primes.push(i);
+    }
+  }
+  return primes;
+}
+
+export function getPrimes(n){
+  var primes = [];
+  if(evenlyDivides(n,2))
+    primes.push(2);
+
+  for (var i = 3; i <= n; i = i+2) {
     if (evenlyDivides(n,i))
       primes.push(i);
   }
