@@ -10,7 +10,7 @@ export function GCD(a,b){
   return b;
 }
 
-function evenlyDivides(n,k){
+export function evenlyDivides(n,k){
   return (n % k === 0);
 }
 
