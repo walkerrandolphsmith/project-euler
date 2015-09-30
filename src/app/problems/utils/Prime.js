@@ -11,3 +11,8 @@ export function getPrimes(n){
   }
   return primes;
 }
+
+export function isPrime(n){
+  var primes = getPrimes(n);
+  return primes[0] === n;
+}
