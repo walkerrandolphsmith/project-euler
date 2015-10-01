@@ -20,4 +20,52 @@ describe('../src/app/problems/008/largest-product-in-series', () => {
       });
     });
   });
+
+  describe('Given value 7316717653133 and the number of digits, k, in a sequence', () => {
+    var value = "7316717653133";
+    var numberOfDigitsInSequence = 13;
+
+    describe('When determining the greatest prduct of k adjacent digits in the value', () => {
+      let actual;
+      beforeEach(() => {
+         actual = sut.getGreatestProduct(value, numberOfDigitsInSequence);
+      });
+
+      it('should equal 5000940', () => {
+       expect(actual).toBe(5000940);
+      });
+    });
+  });
+
+  describe('Given value 1111111111111 and the number of digits, k, in a sequence', () => {
+    var value = "1111111111111";
+    var numberOfDigitsInSequence = 13;
+
+    describe('When determining the greatest prduct of k adjacent digits in the value', () => {
+      let actual;
+      beforeEach(() => {
+         actual = sut.getGreatestProduct(value, numberOfDigitsInSequence);
+      });
+
+      it('should equal 1', () => {
+       expect(actual).toBe(1);
+      });
+    });
+  });
+
+  describe('Given value 1110111111111 and the number of digits, k, in a sequence such that every k consective digits of value contain a 0', () => {
+    var value = "1110111111111";
+    var numberOfDigitsInSequence = 13;
+
+    describe('When determining the greatest prduct of k adjacent digits in the value', () => {
+      let actual;
+      beforeEach(() => {
+         actual = sut.getGreatestProduct(value, numberOfDigitsInSequence);
+      });
+
+      it('should equal 0', () => {
+       expect(actual).toBe(0);
+      });
+    });
+  });
 });
