@@ -1,9 +1,9 @@
-jest.dontMock('./../../app/problems/002/fib');
+jest.dontMock('./../../src/problems/002/fib');
 
-describe('../src/app/problems/002/fib', () => {
+describe('../src/src/problems/002/fib', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../app/problems/002/fib').calc;
+      sut = require('./../../src/problems/002/fib').calc;
   });
 
   describe('Given the fibonocci sequence', () => {

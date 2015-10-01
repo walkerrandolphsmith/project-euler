@@ -1,9 +1,9 @@
-jest.dontMock('./../../app/problems/utils/Utils');
+jest.dontMock('./../../src/problems/utils/Utils');
 
-describe('../src/app/problems/utils/Utils/evenlyDivides', () => {
+describe('../src/src/problems/utils/Utils/evenlyDivides', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../app/problems/utils/Utils').evenlyDivides;
+      sut = require('./../../src/problems/utils/Utils').evenlyDivides;
   });
 
   describe('Given two positive non-zero values', () => {

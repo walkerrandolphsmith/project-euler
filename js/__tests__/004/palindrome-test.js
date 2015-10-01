@@ -1,9 +1,9 @@
-jest.dontMock('./../../app/problems/004/palindrome');
+jest.dontMock('./../../src/problems/004/palindrome');
 
-describe('../src/app/problems/004/palindrome', () => {
+describe('../src/src/problems/004/palindrome', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../app/problems/004/palindrome');
+      sut = require('./../../src/problems/004/palindrome');
   });
 
   describe('When determining which two, three digit numbers\' product creates the larget palindrome', () => {

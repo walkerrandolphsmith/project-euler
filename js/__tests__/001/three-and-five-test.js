@@ -1,10 +1,10 @@
-jest.dontMock('./../../app/problems/001/three-and-five');
-jest.dontMock('./../../app/problems/utils/Utils');
+jest.dontMock('./../../src/problems/001/three-and-five');
+jest.dontMock('./../../src/problems/utils/Utils');
 
-describe('../src/app/problems/001/three-and-five', () => {
+describe('../src/src/problems/001/three-and-five', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../app/problems/001/three-and-five').threeAndFive;
+      sut = require('./../../src/problems/001/three-and-five').threeAndFive;
   });
 
   describe('Given values from 0 to 1000', () => {
