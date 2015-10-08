@@ -1,8 +1,13 @@
 .idea
 .DS_Store
 
+#JS
 node_modules
-web_modules
-packages
-
 npm-debug.log
+
+#PYTHON
+
+#RUBY
+
+#JAVA
+*.class
