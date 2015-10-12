@@ -1,6 +1,6 @@
 import * as Utils from './Utils';
 
-export function getPrimes(n){
+export function getPrimesFactorsOf(n){
   var primes = [];
   if(Utils.evenlyDivides(n,2))
     primes.push(2);
