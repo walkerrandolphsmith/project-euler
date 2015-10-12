@@ -56,3 +56,28 @@ export function getFirstKPrimes(k){
   }
   return primes;
 }
+
+export function getPrimesBelow(k){
+  let primes = [2,3];
+  let n = 5;
+
+  function isPrime(n) {
+      let i = 1;
+      let p = primes[i];
+      let limit = Math.ceil(Math.sqrt(n));
+
+      while (p <= limit) {
+          if (n % p === 0) { return false; }
+          i++;
+          p = primes[i];
+      }
+      return true;
+  }
+
+  while(true){
+    while(!isPrime(n)){ n+= 2 }
+    if(n > k) return primes;
+    primes.push(n);
+    n += 2;
+  }
+}
