@@ -1,4 +1,5 @@
 jest.dontMock('./../../src/007/10001st-prime');
+jest.dontMock('./../../src/utils/Prime');
 
 describe('../src/src/007/10001st-prime', () => {
   let sut;
