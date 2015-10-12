@@ -21,4 +21,20 @@ describe('../src/src/010/sum-of-primes', () => {
       });
     });
   });
+
+  describe('Given value two million', () => {
+    var value = 2000000;
+
+    describe('When determining the sum of primes less than the given value', () => {
+      let actual;
+      beforeEach(() => {
+         actual = sut.sumOfPrimesBelow(value);
+      });
+
+      it('should equal 142913828922', () => {
+       expect(actual).toBe(142913828922);
+      });
+    });
+  });
+
 });
