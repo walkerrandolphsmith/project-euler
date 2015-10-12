@@ -1,10 +1,10 @@
-jest.dontMock('./../../src/problems/005/smallest-multiple');
-jest.dontMock('./../../src/problems/utils/Utils');
+jest.dontMock('./../../src/005/smallest-multiple');
+jest.dontMock('./../../src/utils/Utils');
 
-describe('../src/src/problems/005/smallest-multiple', () => {
+describe('../src/src/005/smallest-multiple', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/005/smallest-multiple');
+      sut = require('./../../src/005/smallest-multiple');
   });
   describe('Given a range from 1 to 20', () => {
     var range = [1,20];

@@ -1,10 +1,10 @@
-jest.dontMock('./../../src/problems/utils/Prime');
-jest.dontMock('./../../src/problems/utils/Utils');
+jest.dontMock('./../../src/utils/Prime');
+jest.dontMock('./../../src/utils/Utils');
 
-describe('../src/src/problems/utils/Prime/isPrime', () => {
+describe('../src/src/utils/Prime/isPrime', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/utils/Prime').isPrime;
+      sut = require('./../../src/utils/Prime').isPrime;
   });
 
   describe('Given positive, composite integer 10', () => {

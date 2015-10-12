@@ -1,9 +1,9 @@
-jest.dontMock('./../../src/problems/009/pythagorean-triplet');
+jest.dontMock('./../../src/009/pythagorean-triplet');
 
-describe('../src/src/problems/009/pythagorean-triplet', () => {
+describe('../src/src/009/pythagorean-triplet', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/009/pythagorean-triplet');
+      sut = require('./../../src/009/pythagorean-triplet');
   });
 
   describe('Given value 12', () => {

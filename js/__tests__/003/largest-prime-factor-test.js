@@ -1,10 +1,10 @@
-jest.dontMock('./../../src/problems/003/largest-prime-factor');
-jest.dontMock('./../../src/problems/utils/Utils');
+jest.dontMock('./../../src/003/largest-prime-factor');
+jest.dontMock('./../../src/utils/Utils');
 
-describe('../src/src/problems/003/largest-prime-factor', () => {
+describe('../src/src/003/largest-prime-factor', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/003/largest-prime-factor').getLargestPrimeFactor;
+      sut = require('./../../src/003/largest-prime-factor').getLargestPrimeFactor;
   });
 
   describe('Given 600851475143', () => {

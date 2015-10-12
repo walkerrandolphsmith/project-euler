@@ -1,9 +1,9 @@
-jest.dontMock('./../../src/problems/006/difference-sumofsquares-squareofsums');
+jest.dontMock('./../../src/006/difference-sumofsquares-squareofsums');
 
-describe('../src/src/problems/006/difference-sumofsquares-squareofsums', () => {
+describe('../src/src/006/difference-sumofsquares-squareofsums', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/006/difference-sumofsquares-squareofsums');
+      sut = require('./../../src/006/difference-sumofsquares-squareofsums');
   });
   describe('Given value 100', () => {
     var value = 100;

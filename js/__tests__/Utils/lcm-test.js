@@ -1,9 +1,9 @@
-jest.dontMock('./../../src/problems/utils/Utils');
+jest.dontMock('./../../src/utils/Utils');
 
-describe('../src/src/problems/utils/Utils/LCM', () => {
+describe('../src/src/utils/Utils/LCM', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/utils/Utils').LCM;
+      sut = require('./../../src/utils/Utils').LCM;
   });
 
   describe('Given two non-zero values', () => {

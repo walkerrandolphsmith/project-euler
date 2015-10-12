@@ -1,9 +1,9 @@
-jest.dontMock('./../../src/problems/007/10001st-prime');
+jest.dontMock('./../../src/007/10001st-prime');
 
-describe('../src/src/problems/007/10001st-prime', () => {
+describe('../src/src/007/10001st-prime', () => {
   let sut;
   beforeEach(() => {
-      sut = require('./../../src/problems/007/10001st-prime');
+      sut = require('./../../src/007/10001st-prime');
   });
   describe('Given value 10001', () => {
     var value = 10001;
